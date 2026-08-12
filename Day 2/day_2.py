@@ -1,5 +1,5 @@
-''' Day 1: Python Fundamentals
-   Date:09/08/2026
+''' Day 2: Python Fundamentals
+   Date:10/08/2026
    Name: Mayuresh Suresh Shirsath
    Cohort: AI/ML 
    Description : Topics that are covered on day 2
