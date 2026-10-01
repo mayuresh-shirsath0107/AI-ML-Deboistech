@@ -1,0 +1,25 @@
+[project]
+name = "project-memory-mcp"
+version = "0.1.0"
+description = "FastMCP server that stores and retrieves project memory as Markdown files (one tool, one resource, one prompt)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "fastmcp>=2.10",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+# server.py is a single file, so tell setuptools about it explicitly.
+[tool.setuptools]
+py-modules = ["server"]
+
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
